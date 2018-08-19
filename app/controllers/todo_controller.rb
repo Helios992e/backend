@@ -24,7 +24,7 @@ end
   def destroy
   t = Todo.find_by_id(params[:id])
   t.destroy
-  redirect_to "/todo/index"
+  redirect_to "/"
   end
 def index
   @todos = Todo.all
